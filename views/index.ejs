@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="handle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <title>Demo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="wrapper">
+            
+            <form>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"></div>
+                    <div id="loginForm" class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <form>
+                            <label for="usr">Nhập tên hiển thị:</label>
+                            <input type="text" class="form-control" id="txtUserName" required=''>
+                            <button  type ="button" id="btnRegister" class="btn btn-success btn-block">Đăng ký</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                    
+            <!-- <div id="chatForm">
+                <div id="left">
+                    <div id="boxTitle">User Online</div>
+                    <div id="boxContent"></div>
+                </div>
+                
+                <div id="right">
+                    <div id="sayHi">Hello
+                        <span id="currentUser"></span>
+                        <button id="btnLogout">Logout</button>
+                        
+            <!-- </div>
+                            
+                            <div id="listMessage"></div>
+                            <div id="note"></div>
+                            <form>
+                                <input type="text" id="txtMessage">
+                                <!-- <button id="btnSendMessage">Send Message</button> -->
+            <!-- <input type="button" value="Send" id="btnSendMessage">
+                                </form>
+                                
+                            </div>
+                            
+                        </div>  -->
+
+
+
+
+
+            <!-- ////////////////////////// -->
+            <br>
+            <br>
+            <br>
+            
+            
+            
+            <div class="row">
+                <div id='chatForm'>
+                        <div id="sayHi">Hello '
+                        <span id="currentUser"></span>'
+                <input id="btnLogout" class="btn btn-danger" type="button" value="Logout">
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="panel-heading">Danh sách Online</div>
+                        <div class="panel-body" id="boxContent"></div>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-sm-8 col-xs-8">
+
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                    </span>
+
+                                    <div id="listMessage">
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="txtMessage" type="text" class="btn-input form-control input-sm" placeholder="Nhập tin nhắn ...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm btn-chat" id="btnSendMessage">Gửi</button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
